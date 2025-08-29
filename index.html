@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <meta name="author" content="arindam das">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Number Guessing Game</h1>
+
+        <div class="instructions">
+            <p>Try and guess a random number between 1 and 100.</p>
+            <p>You have 10 attempts to guess the right number.</p>
+        </div>
+
+        <form class="form">
+            <div class="input-group">
+                <input type="number" id="guessField" class="guessField" min="1" max="100" required>
+                <input type="submit" id="subt" value="Submit Guess" class="guessSubmit">
+            </div>
+        </form>
+
+        <div class="resultParas">
+            <p>Previous Guesses: <span class="guesses"></span></p>
+            <p>Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+            <p class="attempts-warning">Each wrong guess decreases your remaining attempts!</p>
+        </div>
+
+        <button class="new-game" id="newGame">Start New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
